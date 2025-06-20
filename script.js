@@ -1,3 +1,25 @@
+
+
+const correctCode = "mauhariya08";
+
+
+document.body.style.display = "none";
+
+
+const userCode = prompt("Enter secret code to view the website:");
+
+
+if (userCode === correctCode) {
+  document.body.style.display = "block"; 
+} else {
+  alert("❌ Incorrect Code! Access Denied.");
+  document.write("<h1 style='color:red; text-align:center;'>Access Denied</h1>");
+}
+
+
+
+
+
 const videoFiles = [
   "/video1.mp4",
   "/video2.mp4",
@@ -27,3 +49,4 @@ videoFiles.forEach((file, index) => {
 
   container.appendChild(card);
 });
+
